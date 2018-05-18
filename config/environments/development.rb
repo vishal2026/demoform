@@ -41,16 +41,15 @@ Rails.application.configure do
     config.action_mailer.raise_delivery_errors = true
     config.action_mailer.default :charset => "utf-8"
     config.action_mailer.smtp_settings = {
-      address: "smtp.gmail.com",
+      address: "mail.mithiskyconnect.com",
       port: 587,
-      domain: "gmail.com",
+      domain: "mithiskyconnect.com",
       authentication: "plain",
-      user_name: "vishal.claritus@gmail.com",
-      password: "perplexed",
+      user_name: "developers.ops@claritusconsulting.com ",
+      password: "Dops1234#",
       authentication: "plain",
       enable_starttls_auto: true
     }
-
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 

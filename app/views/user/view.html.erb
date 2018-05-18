@@ -25,6 +25,9 @@
 	    
 	    </tbody>
 	</table>
-	<!-- Confirmation Alert After Mail Sent -->
 	
+	<!-- Confirmation Alert After Mail Sent -->
+ 	<div class="<%= "alert alert-success" if @confirmation_alert %>">
+ 		<%= @confirmation_alert if @confirmation_alert %>
+ 	</div>
 </div>

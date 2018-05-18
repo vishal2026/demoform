@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <style>
+        td:nth-child(odd) {  
+          color: #ffffff!important;     
+          background-color: #353a40!important;      
+          max-width: 120px;    
+          border-color: #40454c !important; 
+        }
+        
+  </style>
+  </head>
+  <body>
+    <div style="width:100%; ">
+    <h3>Dear <%= @user.first_name %>,</h3>
+  
+    <p>On behalf of the entire  Team, we'd like to take this opportunity to welcome you as a new “Sophia Concept” member.</p>
+  
+    <p>Please verify the below submitted details:</p>
+
+    <table style="width:400px; margin:50px auto 10px auto;  background:#f5f5f5; padding:1.5%; border:1px solid #cccccc;">
+ 
+      <tbody>
+
+        <tr>
+          <td style="padding: 12px;    vertical-align: top;">First Name</td> <td style="padding: 12px;    vertical-align: top;"><%= @user.first_name %></td>
+        </tr>
+        <tr> 
+         <td style="padding: 12px;    vertical-align: top;">Last Name</td>  <td style="padding: 12px;    vertical-align: top;"><%= @user.last_name %></td>
+        </tr>
+        <tr>
+         <td style="padding: 12px;    vertical-align: top;">Email</td> <td style="padding: 12px;    vertical-align: top;"><%= @user.email %></td>
+        </tr>
+        <tr>
+         <td style="padding: 12px;    vertical-align: top;">Country</td> <td style="padding: 12px;    vertical-align: top;"><%= @country.country_name %></td>
+        </tr>
+        <tr>
+          <td style="padding: 12px;    vertical-align: top;">City</td> <td style="padding: 12px;    vertical-align: top;"><%= @city.city_name %></td>
+        </tr>
+         
+      </tbody>
+
+  </table>
+ 
+ <p align="center" style="font-size: 9px">For queries you can contact to our 24*7 Support team.</p>     
+ 
+ <p> We are thrilled to have you with us. </p>
+ 
+ <p><em>Big thanks!!</em></p>
+ 
+ <p><strong>Support Team</strong></p>
+ 
+ <p>Sophia Concept</p>
+  </body>
+</html>
